@@ -13,5 +13,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    SOURCEO: ${{ inputs.source }}
+    SOURCE: ${{ inputs.source }}
     DESTINATION: ${{ inputs.destination }}
