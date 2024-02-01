@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Transfer Docker Image
-        uses: ./docker-image-transfer-action
+        uses: ./
         with:
           source-repo: docker.io/your-username/your-repo:latest
           destination-registry: localhost:5001
