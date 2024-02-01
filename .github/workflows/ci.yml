@@ -1,0 +1,30 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    name: Test Action
+    runs-on: ubuntu-latest
+
+    # Run a local registry to push to
+    services:
+      registry:
+        image: registry:2
+        ports:
+          - 5001:5000
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Transfer Docker Image
+        uses: ./docker-image-transfer-action
+        with:
+          source-repo: docker.io/your-username/your-repo:latest
+          destination-registry: localhost:5001
+          destination-repo: my-app
