@@ -1,5 +1,9 @@
 name: 'Docker Image Transfer'
 description: 'Pulls a Docker image from a registry and pushes it to another.'
+author: 'alex289'
+branding:
+  icon: 'box'
+  color: 'purple'
 
 inputs:
   source:
