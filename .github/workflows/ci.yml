@@ -25,6 +25,6 @@ jobs:
       - name: Transfer Docker Image
         uses: ./
         with:
-          source-repo: docker.io/your-username/your-repo:latest
+          source-repo: docker.io/hello-world:latest
+          destination-repo: hello-world:latest
           destination-registry: localhost:5001
-          destination-repo: my-app
