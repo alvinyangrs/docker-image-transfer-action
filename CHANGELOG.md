@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/alex289/docker-image-transfer-action/compare/v1.0.0...v1.1.0) (2024-02-01)
+
+
+### Features
+
+* Add icon ([bafe70e](https://github.com/alex289/docker-image-transfer-action/commit/bafe70e9579ad4854f1f2c9160163a3673c074df))
+
 ## 1.0.0 (2024-02-01)
 
 
