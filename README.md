@@ -8,8 +8,8 @@ Add the following step to your GitHub Actions workflow:
 
 > [!NOTE]
 > If you need to login to the registry first add a secret for:
-> SOURCE_REGISTRY_USERNAME/DESTINATION_REGISTRY_USERNAME
-> SOURCE_REGISTRY_PASSWORD/DESTINATION_REGISTRY_PASSWORD
+> SOURCE_REGISTRY_USERNAME / DESTINATION_REGISTRY_USERNAME
+> SOURCE_REGISTRY_PASSWORD / DESTINATION_REGISTRY_PASSWORD
 
 ```yml
 - name: Transfer Docker image
