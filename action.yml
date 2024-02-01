@@ -8,6 +8,18 @@ inputs:
   destination:
     description: 'Destination Docker image repository (e.g., docker.io/user/source-repo:tag)'
     required: true
+  source_registry_username:
+    description: 'Username for the source registry'
+    required: false
+  destination_registry_username:
+    description: 'Username for the destination registry'
+    required: false
+  source_registry_password:
+    description: 'Password for the source registry'
+    required: false
+  destination_registry_password:
+    description: 'Password for the destination registry'
+    required: false
 
 runs:
   using: 'docker'
@@ -15,7 +27,7 @@ runs:
   env:
     SOURCE: ${{ inputs.source }}
     DESTINATION: ${{ inputs.destination }}
-    SOURCE_REGISTRY_USERNAME: ${{ secrets.SOURCE_REGISTRY_USERNAME }}
-    DESTINATION_REGISTRY_USERNAME: ${{ secrets.DESTINATION_REGISTRY_USERNAME }}
-    SOURCE_REGISTRY_PASSWORD: ${{ secrets.SOURCE_REGISTRY_PASSWORD }}
-    DESTINATION_REGISTRY_PASSWORD: ${{ secrets.DESTINATION_REGISTRY_PASSWORD }}
+    SOURCE_REGISTRY_USERNAME: ${{ inputs.source_registry_username }}
+    DESTINATION_REGISTRY_USERNAME: ${{ inputs.destination_registry_username }}
+    SOURCE_REGISTRY_PASSWORD: ${{ inputs.source_registry_password }}
+    DESTINATION_REGISTRY_PASSWORD: ${{ inputs.destination_registry_password }}

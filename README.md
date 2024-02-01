@@ -7,9 +7,9 @@ This GitHub Action pulls a Docker image from a source registry and pushes it to 
 Add the following step to your GitHub Actions workflow:
 
 > [!NOTE]
-> If you need to login to the registry first add a secret for:
-> SOURCE_REGISTRY_USERNAME / DESTINATION_REGISTRY_USERNAME
-> SOURCE_REGISTRY_PASSWORD / DESTINATION_REGISTRY_PASSWORD
+> If you need to login to the registry first set these inputs:
+> source_registry_username/destination_registry_username
+> source_registry_password/destination_registry_password
 
 ```yml
 - name: Transfer Docker image
