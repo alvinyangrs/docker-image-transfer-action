@@ -9,11 +9,10 @@ then
 fi
 
 # Pull the image from Docker Hub
-docker pull $SOURCE_REPO
+docker pull $SOURCE
 
 # Tag the image for the destination registry
-DESTINATION_IMAGE="$DESTINATION_REGISTRY/$DESTINATION_REPO"
-docker tag $SOURCE_REPO $DESTINATION_IMAGE
+docker tag $SOURCE $DESTINATION
 
 # Log in to the destination registry
 if [ -n "$DESTINATION_REGISTRY_PASSWORD" ] && [ -n "$DESTINATION_REGISTRY_USERNAME" ]
@@ -22,4 +21,4 @@ then
 fi
 
 # Push the image to the destination registry
-docker push $DESTINATION_IMAGE
+docker push $DESTINATION

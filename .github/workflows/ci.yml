@@ -25,6 +25,15 @@ jobs:
       - name: Transfer Docker Image
         uses: ./
         with:
-          source-repo: docker.io/hello-world:latest
-          destination-repo: hello-world:latest
-          destination-registry: localhost:5001
+          source: docker.io/hello-world:latest
+          destination: localhost:5001/hello-world:latest
+
+      - name: Clear images
+        run: |
+          docker image rm docker.io/hello-world:latest
+          docker image rm localhost:5001/hello-world:latest
+
+      - name: Check Docker Image
+        run: |
+          docker pull localhost:5001/hello-world:latest
+          docker run localhost:5001/hello-world:latest

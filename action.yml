@@ -1,21 +1,17 @@
 name: 'Docker Image Transfer'
-description: 'Pulls a Docker image from Docker Hub and pushes it to another registry.'
+description: 'Pulls a Docker image from a registry and pushes it to another.'
 
 inputs:
-  source-repo:
-    description: 'Source Docker image repository (e.g., user/source-repo:tag)'
+  source:
+    description: 'Source Docker image repository (e.g., docker.io/user/source-repo:tag)'
     required: true
-  destination-registry:
-    description: 'Destination Docker registry'
-    required: true
-  destination-repo:
-    description: 'Destination Docker image repository'
+  destination:
+    description: 'Destination Docker image repository (e.g., docker.io/user/source-repo:tag)'
     required: true
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    SOURCE_REPO: ${{ inputs.source-repo }}
-    DESTINATION_REGISTRY: ${{ inputs.destination-registry }}
-    DESTINATION_REPO: ${{ inputs.destination-repo }}
+    SOURCEO: ${{ inputs.source }}
+    DESTINATION: ${{ inputs.destination }}
