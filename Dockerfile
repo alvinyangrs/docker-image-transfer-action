@@ -1,4 +1,4 @@
-FROM docker:25.0.1
+FROM docker:25.0.3
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
