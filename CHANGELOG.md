@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/alex289/docker-image-transfer-action/compare/v1.1.0...v1.2.0) (2024-04-01)
+
+
+### Features
+
+* Adjust readme inputs ([e1f8368](https://github.com/alex289/docker-image-transfer-action/commit/e1f8368271943cf6a66ec7762799bceefce65508))
+
 ## [1.1.0](https://github.com/alex289/docker-image-transfer-action/compare/v1.0.0...v1.1.0) (2024-02-01)
 
 
