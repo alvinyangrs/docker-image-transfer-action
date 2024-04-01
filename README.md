@@ -8,8 +8,11 @@ Add the following step to your GitHub Actions workflow:
 
 > [!NOTE]
 > If you need to login to the registry first set these inputs:
-> source_registry_username/destination_registry_username
-> source_registry_password/destination_registry_password
+>
+> - source_registry_username
+> - destination_registry_username
+> - source_registry_password
+> - destination_registry_password
 
 ```yml
 - name: Transfer Docker image
