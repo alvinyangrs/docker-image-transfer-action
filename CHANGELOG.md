@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/alex289/docker-image-transfer-action/compare/v1.2.0...v1.2.1) (2024-05-01)
+
+
+### Bug Fixes
+
+* Typo ([b5946e9](https://github.com/alex289/docker-image-transfer-action/commit/b5946e94c4a2e03b27d3a8f545085b554c5eee03))
+
 ## [1.2.0](https://github.com/alex289/docker-image-transfer-action/compare/v1.1.0...v1.2.0) (2024-04-01)
 
 
