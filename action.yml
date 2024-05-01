@@ -7,10 +7,10 @@ branding:
 
 inputs:
   source:
-    description: 'Source Docker image repository (e.g., docker.io/user/source-repo:tag)'
+    description: 'Source Docker image repository (e.g.: docker.io/user/source-repo:tag)'
     required: true
   destination:
-    description: 'Destination Docker image repository (e.g., docker.io/user/source-repo:tag)'
+    description: 'Destination Docker image repository (e.g.: docker.io/user/source-repo:tag)'
     required: true
   source_registry_username:
     description: 'Username for the source registry'
