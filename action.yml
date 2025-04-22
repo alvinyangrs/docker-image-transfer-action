@@ -12,7 +12,7 @@ inputs:
   destination:
     description: 'Destination Docker image repository (e.g.: docker.io/user/source-repo:tag)'
     required: true
-  destination_registry_name:
+  destination_registry:
     description: 'Destination Docker repository name (e.g.: docker.io/user/)'
     required: true
   source_registry_username:
