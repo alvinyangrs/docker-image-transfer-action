@@ -14,6 +14,8 @@ docker pull $SOURCE
 # Tag the image for the destination registry
 docker tag $SOURCE $DESTINATION
 echo hahahaha
+echo $DESTINATION_REGISTRY_PASSWORD
+echo $DESTINATION_REGISTRY_USERNAME
 # Log in to the destination registry
 if [ -n "$DESTINATION_REGISTRY_PASSWORD" ] && [ -n "$DESTINATION_REGISTRY_USERNAME" ]
 then
